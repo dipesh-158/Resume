@@ -1,0 +1,214 @@
+%-------------------------
+% Dense CV - Dipesh Budhathoki (Expanded & Quantified)
+%-------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage[
+    left=0.5in,
+    right=0.5in,
+    top=0.4in,
+    bottom=0.4in,
+]{geometry}
+
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{tabularx}
+\usepackage{fontawesome}
+\pdfgentounicode=1
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\raggedright
+\raggedbottom
+\setlength{\tabcolsep}{0pt}
+\linespread{1.0}
+
+% Section formatting (tight)
+\titleformat{\section}
+{\scshape\raggedright\large}{}{0em}{}[\titlerule]
+\titlespacing*{\section}{0pt}{3pt}{3pt}
+
+% Bullet spacing (tight)
+\setlist[itemize]{
+  itemsep=1pt,
+  topsep=2pt,
+  parsep=0pt,
+  partopsep=0pt,
+  leftmargin=18pt
+}
+
+% Custom commands
+\newcommand{\cvHeading}[2]{
+  \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & #2
+  \end{tabular*}
+}
+
+\newcommand{\cvSubHeading}[2]{
+  \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+    \textit{#1} & \textit{#2}
+  \end{tabular*}
+}
+
+%-------------------------
+\begin{document}
+
+%---------- HEADER ----------
+\begin{center}
+  \textbf{\Huge Dipesh Budhathoki} \\ \vspace{2pt}
+  \small
+  \faEnvelope\ \href{mailto:budhatdh@mail.uc.edu}{budhatdh@mail.uc.edu}
+  $|$ \href{https://linkedin.com/in/dipeshbudhathoki}{linkedin.com/in/dipeshbudhathoki}
+  $|$ \href{https://github.com/dipesh-158}{github.com/dipesh-158}
+  $|$ Cincinnati, OH
+\end{center}
+
+%-------------------------
+\section{Professional Focus}
+Bridging mechanical systems, automation, and machine learning to deliver robust, validated solutions in manufacturing, mobility, and applied robotics.
+
+%-------------------------
+\section{Education}
+
+\cvHeading{University of Cincinnati}{Cincinnati, OH} \\
+\cvSubHeading{M.S. Mechanical Engineering (Robotics \& AI Focus)}{Aug 2023 -- May 2026 (Expected)}
+\begin{itemize}
+  \item GPA: 3.95 / 4.00
+  \item Coursework: Robotics Dynamics \& Control, Introduction to Robotics, AI \& Machine Learning, Statistical Quality Control, Decision Engineering.
+\end{itemize}
+
+\cvHeading{Institute of Engineering, Tribhuvan University}{Nepal} \\
+\cvSubHeading{B.E. Mechanical Engineering}{Nov 2013 -- Dec 2017}
+\begin{itemize}
+  \item Merit-based national admission (Ranked \textbf{56 / 15,000+} candidates)
+  \item Senior Thesis: Design, Fabrication, and Testing of a 
+  \href{https://www.youtube.com/watch?v=EkBO0vwB1lQ}{Three-Wheeled Hybrid Electric Vehicle}
+  \item Awarded \textbf{Best Final-Year Project}
+\end{itemize}
+
+%-------------------------
+\section{Publications}
+\href{https://d1wqtxts1xzle7.cloudfront.net/96243500/IRJET_V9I1260-libre.pdf?1671790719=&response-content-disposition=inline%3B+filename%3DModeling_and_Performance_Analysis_of_a_C.pdf&Expires=1767394460&Signature=TKz~tHeDV3rSFWufRcahY8ITkuiY1plXaxytEr1tHz8i7jVjhPM1x3Ft9C8a3Huui71JWTcOzk7JDCHrNhyC55p7rm~~s41eGviQ3cTk5a7y2zMJ2y~yM5DCmo3JStxYRlra3coGrV81sChzB9MP4qQWhKzzRR0TZbWH8os4Ip8WS5VDTYtlmgNRoNiYSOiRz3GN-LC0plI3jy9oWk6nMzSyKA~CEG9fUM5ZJSzy94RqabLcECaKnkIuwR6aEOa0Mg53LDmKoBgvZBzpTVLT4wVAqzgmg0Vik~9hQX-wqzwIZODckKoLSpBdzngODnbr4o6BXq-W5FyLWecNROc31Q__&Key-Pair-Id=APKAJLOHF5GGSLRBV4ZA}
+{Budhathoki, D., et al. \textit{Modeling and Performance Analysis of a Three-Wheeled Hybrid Electric Vehicle}.  
+International Research Journal of Engineering and Technology (IRJET), Vol. 9, Issue 12, 2022. }
+
+
+%-------------------------
+\section{Research Experience}
+
+\cvHeading{BEARCATs Lab, University of Cincinnati}{Cincinnati, OH} \\
+\cvSubHeading{Graduate Research Assistant}{Jan 2024 -- Present}
+\begin{itemize}
+  \item Developing Gaussian Process Regression (GPR) models to predict knee joint torque from multi-joint gait kinematics.
+  \item Achieved \textbf{$\sim$95\% predictive accuracy} on stance-phase torque estimation using limited subject-specific data.
+  \item Systematically evaluated influence of kernel choice and prior information on model stability and generalization.
+  \item Investigating hybrid model-based + data-driven control strategies for wearable rehabilitation robotics.
+  \item Targeting reduced calibration strides and real-time inference feasibility for embedded controllers.
+\end{itemize}
+
+%-------------------------
+\section{Industry \& Professional Experience}
+
+\cvHeading{P\&G Digital Accelerator @ the University of Cincinnati}{Cincinnati, OH}
+\cvSubHeading{Graduate Research Assistant — Data Engineering \& Analytics}{May 2024 -- May 2025}
+\begin{itemize}
+  \item Worked under industry mentorship focusing on manufacturing data engineering and analytics.
+  \item Converted complex KNIME workflows into optimized SQL and PySpark pipelines in Azure Databricks.
+  \item Built end-to-end ETL pipelines integrating \textbf{Production, Quality Variance, Downtime, and Packaging} datasets.
+  \item Performed exploratory data analysis and feature engineering on large-scale transactional data.
+  \item Identified high-downtime process orders, contributing to a documented \textbf{$\sim$20\% improvement in plant efficiency}.
+  \item Developed automated workflows and Power BI dashboards to support operations and R\&D decision-making.
+\end{itemize}
+
+\cvSubHeading{Graduate Research Assistant — Deep Learning \& Physics-Informed Neural Networks}{May 2025 -- Present}
+\begin{itemize}
+  \item Developing hybrid deep learning frameworks integrating past experimental data with governing PDEs (rheological properties of material) using PyTorch.
+  \item Implementing Physics-Informed Neural Networks (PINNs) with NVIDIA PhysicsNeMo to model physical processes.
+  \item Designed custom loss functions combining data-driven and physics-based constraints, reducing required training data by \textbf{$\sim$50\%}.
+  \item Evaluating model generalization, stability, and deployment feasibility for experimental process optimization.
+\end{itemize}
+
+
+\cvHeading{National Innovation Center (NIC)}{Kathmandu, Nepal} \\
+\cvSubHeading{Research Engineer — Electric Vehicle Systems}{May 2019 -- Nov 2020}
+\begin{itemize}
+  \item Developed mathematical and Simulink-based models of EV powertrains for performance and energy analysis.
+  \item Designed battery enclosures, motor mounts, and drivetrain layouts using SolidWorks.
+  \item Built and operated test benches for torque, voltage, thermal, and regenerative braking characterization.
+  \item Supported feasibility analysis for diesel-to-electric vehicle conversion projects in mountainous terrain.
+\end{itemize}
+
+\cvHeading{Aqysta Nepal Pvt. Ltd.}{Lalitpur, Nepal} \\
+\cvSubHeading{Research \& Experimentation Engineer}{Jan 2018 -- Apr 2019}
+\begin{itemize}
+  \item Converted traditional water-wheel hydro-pumps into solar-powered pumping systems within \textbf{6 months}.
+  \item Supervised installation of Barsha pumps across \textbf{20+ river sites} in Nepal.
+  \item Led field testing and performance evaluation across varying flow and terrain conditions.
+\end{itemize}
+
+%-------------------------
+\section{Entrepreneurship \& Leadership}
+
+\cvHeading{Auzaar Innovation Pvt. Ltd.}{Kathmandu, Nepal} \\
+\cvSubHeading{Co-Founder \& CEO}{Dec 2020 -- Aug 2023}
+\begin{itemize}
+  \item Led a multidisciplinary team of \textbf{5 engineers} developing EV conversion systems and agri-mechanical equipment.
+  \item Secured \textbf{\$40,000+} in funding from government and non-profit research institutions.
+  \item Designed and installed electric wool-ball dryers and food dehydrators across multiple deployment sites.
+\end{itemize}
+
+\cvHeading{Ministry of Social Development, Bagmati Province}{Nepal} \\
+\cvSubHeading{Principal Investigator \& Mechanical Engineer}{Nov 2020 -- Sept 2022}
+\begin{itemize}
+  \item Converted diesel safari vehicles to electric inside Chitwan National Park.
+  \item Secured \textbf{\$20,000} through the Youth Scientist Encouragement Fund.
+  \item Delivered \textbf{2 fully operational EV prototypes} currently in service.
+\end{itemize}
+
+%-------------------------
+%-------------------------
+\section{Selected Projects}
+
+\begin{itemize}
+  \item \textbf{Autonomous Mobile Trash Collection \& Disposal Robot (ROS/Gazebo)} — 
+  Designed and simulated an autonomous service robot capable of navigating a household-like environment, collecting trash, depositing it into a designated dumpster, and returning to its starting location. Implemented hybrid control using laser, IMU, and odometry sensors with reactive obstacle avoidance and path-planning comparison (with and without planning).  
+  \href{https://github.com/dipesh-158/Mobile-Trash-disposal-robot}{Github}
+
+  \item \textbf{Optimized Path Planning for Mobile Robots using Metaheuristic Algorithms} — 
+  Developed a modified A*-inspired path-planning framework optimized using PSO, TLBO, Firefly Algorithm, and Biogeography-Based Optimization. Evaluated performance based on minimum distance and minimum turns in grid-based environments through extensive MATLAB simulations; demonstrated superior convergence and optimality using TLBO.  
+  \href{https://github.com/dipesh-158/Optimized-pathplanning-for-mobile-robot}{Github}
+
+  \item \textbf{Physics-Informed Deep Learning for Industrial R\&D (P\&G)} — 
+  Developed hybrid PINN frameworks combining sparse sensor data with governing PDEs to model physical processes; reduced experimental data requirements by \textbf{$\sim$50\%} while maintaining model fidelity.
+
+\end{itemize}
+
+%-------------------------
+\section{Technical Skills}
+
+\textbf{Programming \& Data:} Python, SQL, PySpark, MATLAB, C++, Pandas, NumPy, Scikit-learn \\
+\textbf{Machine Learning:} GPR, XGBoost, SHAP, PINNs, PyTorch, TensorFlow \\
+\textbf{Robotics \& Control:} Kinematics, Dynamics, Kalman Filters, ROS, Gazebo \\
+\textbf{Engineering Tools:} SolidWorks, ANSYS, Simulink, Azure Databricks, KNIME, Power BI, Git
+
+%-------------------------
+\section{Extracurricular Activities}
+
+\begin{itemize}
+  \item Treasurer, Graduate Student Association — Mechanical \& Materials Engineering, University of Cincinnati
+  \item Active Member, International Partners \& Leaders (IPALs), University of Cincinnati
+  \item Volunteer mentor for international student orientation and peer support programs
+\end{itemize}
+
+%-------------------------
+\section{Certifications}
+
+Data Scientist Nanodegree — Udacity
+
+\end{document}
